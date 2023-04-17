@@ -1,7 +1,6 @@
 import { useState, useEffect, ReactNode} from 'react';
 import { Canvas } from "@react-three/fiber"
 import { Physics } from "@react-three/cannon";
-import { Stats } from "@react-three/drei";
 import { Ball, BattingZone, Diamond, Clouds, Cursor, CursorDetectionPlane, Ground, Poles, HomeRunText, OutText, Ring, Streak, Walls, BuntDetectionWalls, HomeRunDetectionWalls, Mound, ThrowButton } from "../objects"
 import { camera, AmbientLight, Spotlight } from "../constants"
 import { StateType } from "../types"
@@ -103,7 +102,6 @@ function Scene({children}: {children: ReactNode}) {
 
             <ThrowButton/>
 
-            <Stats />
 
             {/*
 
