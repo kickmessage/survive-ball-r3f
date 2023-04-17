@@ -22,21 +22,23 @@ export default function About({setOpen}:Props) {
                     <ul>
                         <li>
 
-                            Every ball pitched will come within the strike zone.
+                            Click to swing! Only home runs count! 
+
                         </li>
+
                         <li>
 
-                             Once the ball is within strike range, it will change colors from red to green. If you try to hit the ball when it's outside of the strike range, your bat won't make contact!
-                        </li>
-                        <li>
-
-                            Only home runs count! 
-
+                            Once the ball is within strike range, it will change colors from red to green. If you try to hit the ball when it's outside of the strike range, your bat won't make contact!
                         </li>
                         <li>
 
                             Submit your score after a good run to see how you rank up against the world! Best of luck!
                         </li>
+                        <li>
+
+                            Press Escape to pause.
+                        </li>
+
 
                     </ul>
 
