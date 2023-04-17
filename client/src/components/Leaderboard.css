@@ -1,0 +1,183 @@
+.leaderboard-overlay {
+
+    position: absolute;
+    background: black;
+    opacity: 0.8;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    cursor: initial;
+
+
+}
+
+
+.leaderboard-container {
+    color: white;
+    background: black ;
+    width: 75vw;
+    height: 75vh;
+    opacity: 1;
+    z-index: 2;
+    position: absolute;
+    top: 12.5vh;
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    margin: auto;
+    cursor: initial;
+
+}
+
+.leaderboard-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+}
+
+.leaderboard-list li {
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+    font-size: 36px;
+}
+
+.leaderboard-list li span {
+    text-align: center;
+    width: 100px;
+}
+
+.leaderboard-list-section-titles {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    font-size: 36px;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1300px) {
+    .leaderboard-list li {
+        font-size: 30px;
+    }
+
+    .leaderboard-list-section-titles {
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 825px) {
+    .leaderboard-list-section-titles {
+        font-size: 24px;
+    }
+    .leaderboard-list li {
+        font-size: 24px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .leaderboard-list-section-titles {
+
+        font-size: 20px;
+    }
+    .leaderboard-list li {
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (max-height: 850px) {
+    .leaderboard-list-section-titles {
+        font-size: 30px;
+
+    }
+    .leaderboard-list li {
+        font-size: 30px;
+    }
+
+
+
+}
+
+@media screen and (max-height: 675px) {
+    .leaderboard-list-section-titles {
+        font-size: 24px;
+
+    }
+    .leaderboard-list li {
+        font-size: 24px;
+    }
+}
+@media screen and (max-height: 550px) {
+    .leaderboard-list-section-titles {
+        font-size: 20px;
+        position: relative;
+        top: 50px;
+
+    }
+    .leaderboard-list li {
+        font-size: 20px;
+    }
+}
+@media screen and (max-height: 500px) {
+    .leaderboard-list-section-titles {
+
+    }
+    .leaderboard-list li {
+    }
+}
+@media screen and (max-height: 400px) {
+    .leaderboard-list-section-titles {
+        font-size: 16px;
+
+    }
+    .leaderboard-list li {
+        font-size: 16px;
+    }
+}
+
+
+
+
+.leaderboard-page-buttons {
+    font-size: 18px;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+    bottom: 10px;
+
+
+}
+
+.leaderboard-page-buttons button:hover {
+    background: white;
+    color: black;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+
+.close-button-leaderboard {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 18px;
+    z-index: 3;
+
+
+}
+
+.close-button-leaderboard:hover {
+    background: red;
+    box-shadow: none;
+
+
+}

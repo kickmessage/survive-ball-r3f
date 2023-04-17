@@ -1,0 +1,148 @@
+.game-over-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 14px;
+    color: white;
+    background: rgba(0,0,0,0.7);
+    cursor: pointer;
+    /* 
+     * for some reason 100vh doesn't cover entire screen,
+     * something to do with being overlayed over the react three fiber canvas,
+     * easy fix is to just extend the height by 10vh,
+     * and move everything else up 10vh to keep it centered
+     */
+    height: 110vh; 
+    width: 100vw;
+
+
+}
+
+.game-over-menu-buttons-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    bottom: 10vh;
+    height: 100%;
+    width: 100%;
+
+}
+
+.game-over-menu button {
+
+    font-size: 56px;
+}
+
+.game-over-menu h1 {
+    font-size: 100px;
+    text-decoration: underline;
+}
+
+.game-over-menu button:hover {
+    text-decoration: underline;
+    color: black;
+
+}
+
+
+.username-input {
+    height: 50px;
+    width: 200px;
+    font-size: 24px;
+
+
+}
+
+.username-result-form {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.submit-confirm-text {
+    position: absolute;
+    margin-left: 400px;
+    margin-bottom: 150px;
+    text-decoration: underline;
+    font-size: 24px;
+
+
+
+}
+
+.menu-score-result {
+    position: relative;
+    text-decoration: underline;
+    font-size: 18px;
+    left: 250px;
+    bottom: 50px;
+
+}
+
+.leaderboard-gameover-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+@media screen and (max-height: 850px) {
+    .game-over-menu h1 {
+        font-size: 72px;
+
+    }
+    .game-over-menu button {
+        font-size: 56px;
+
+    }
+
+}
+
+@media screen and (max-height: 675px) {
+    .game-over-menu h1 {
+        font-size: 56px;
+    }
+    .game-over-menu button {
+        bottom: 48px;
+    }
+}
+@media screen and (max-height: 550px) {
+    .game-over-menu h1 {
+        font-size: 48px;
+    }
+    .game-over-menu button {
+        font-size: 40px;
+    }
+}
+@media screen and (max-height: 400px) {
+    .game-over-menu h1 {
+        font-size: 40px;
+    }
+    .game-over-menu button {
+        
+        font-size: 32px;
+    }
+    
+}
+
+
+@media screen and (max-width:700px) {
+    .game-over-menu h1 {
+        font-size: 72px;
+    }
+
+    .game-over-menu button {
+        font-size: 46px;
+    }
+    .menu-score-result {
+        position: relative;
+        bottom: 45px;
+        left: 160px;
+    }
+
+}
+

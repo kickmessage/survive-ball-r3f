@@ -1,0 +1,97 @@
+.pause-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 14px;
+    color: white;
+    background: rgba(0,0,0,0.7);
+    cursor: pointer;
+    /* 
+     * for some reason 100vh doesn't cover entire screen,
+     * something to do with being overlayed over the react three fiber canvas,
+     * easy fix is to just extend the height by 10vh,
+     * and move everything else up 10vh to keep it centered
+     */
+    height: 110vh; 
+    width: 100vw;
+
+
+}
+
+.pause-menu-buttons-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    bottom: 10vh;
+    height: 100%;
+    width: 100%;
+
+
+}
+
+.pause-menu button {
+
+    font-size: 56px;
+}
+
+.pause-menu h1 {
+    font-size: 100px;
+    text-decoration: underline;
+}
+
+.pause-menu button:hover {
+    text-decoration: underline;
+    color: black;
+
+}
+
+.self-out-sub-text {
+    font-size: 14px;
+    position: absolute;
+    color: white;
+    margin-left: 25px;
+
+}
+
+@media screen and (max-height: 850px) {
+    .pause-menu h1 {
+        font-size: 72px;
+
+    }
+    .pause-menu button {
+        font-size: 56px;
+
+    }
+
+}
+
+@media screen and (max-height: 675px) {
+    .pause-menu h1 {
+        font-size: 56px;
+    }
+    .pause-menu button {
+        bottom: 48px;
+    }
+}
+@media screen and (max-height: 550px) {
+    .pause-menu h1 {
+        font-size: 48px;
+    }
+    .pause-menu button {
+        font-size: 40px;
+    }
+}
+@media screen and (max-height: 400px) {
+    .pause-menu h1 {
+        font-size: 40px;
+    }
+    .pause-menu button {
+        
+        font-size: 32px;
+    }
+    
+}
+

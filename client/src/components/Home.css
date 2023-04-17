@@ -1,0 +1,22 @@
+.home-wrapper {
+    cursor: none;
+}
+
+.loading-screen {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    font-size: 48px;
+}
+
+
+canvas {
+    background: rgb(245,240,242);
+background: -moz-radial-gradient(circle, rgba(245,240,242,1) 0%, rgba(8,240,213,1) 100%);
+background: -webkit-radial-gradient(circle, rgba(245,240,242,1) 0%, rgba(8,240,213,1) 100%);
+background: radial-gradient(circle, rgba(245,240,242,1) 0%, rgba(8,240,213,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f5f0f2",endColorstr="#08f0d5",GradientType=1);
+}
